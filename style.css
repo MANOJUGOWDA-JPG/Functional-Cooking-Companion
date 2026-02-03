@@ -1,0 +1,50 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    padding: 20px;
+}
+
+#recipe-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.recipe-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.recipe-card h2 {
+    margin-top: 0;
+}
+
+.toggle-btn {
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.steps-container,
+.ingredients-container {
+    display: none;
+    margin-top: 10px;
+}
+
+.steps-container.visible,
+.ingredients-container.visible {
+    display: block;
+}
+
+.step {
+    margin-left: 10px;
+}
+
+.substep {
+    margin-left: 20px;
+    font-size: 0.9em;
+}
